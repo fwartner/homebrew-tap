@@ -1,4 +1,4 @@
-module github.com/hashicorp/homebrew-tap/util/formula_templater
+module github.com/fwartner/homebrew-tap/util/formula_templater
 
 go 1.16
 
