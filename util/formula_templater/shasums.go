@@ -9,7 +9,7 @@ import (
 
 func loadShasums(product string, version string) (map[string]string, error) {
 	shasums := make(map[string]string)
-	shasumURL := fmt.Sprintf("https://releases.hashicorp.com/%s/%s/%s_%s_SHA256SUMS", product, version, product, version)
+	shasumURL := fmt.Sprintf("https://releases.wartner.io/%s/%s/%s_%s_SHA256SUMS", product, version, product, version)
 	resp, err := http.Get(shasumURL)
 	if err != nil {
 		return shasums, err
