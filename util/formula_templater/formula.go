@@ -70,18 +70,18 @@ const formulaTemplate = `class {{ .Name }} < Formula
   {{- if and .Architectures.DarwinAmd64 .Architectures.DarwinArm64 }}
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/wartner-io/{{ .Product }}/{{ .Version }}/{{ .Product }}_{{ .Version }}_darwin_amd64.zip"
+    url "https://github.com/fwartner/{{ .Product }}/{{ .Version }}/{{ .Product }}_{{ .Version }}_darwin_amd64.zip"
     sha256 "{{ .Architectures.DarwinAmd64SHA }}"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/wartner-io/{{ .Product }}/{{ .Version }}/{{ .Product }}_{{ .Version }}_darwin_arm64.zip"
+    url "https://github.com/fwartner/{{ .Product }}/{{ .Version }}/{{ .Product }}_{{ .Version }}_darwin_arm64.zip"
     sha256 "{{ .Architectures.DarwinArm64SHA }}"
   end
   {{- else }}
 
   if OS.mac?
-    url "https://github.com/wartner-io/{{ .Product }}/{{ .Version }}/{{ .Product }}_{{ .Version }}_darwin_amd64.zip"
+    url "https://github.com/fwartner/{{ .Product }}/{{ .Version }}/{{ .Product }}_{{ .Version }}_darwin_amd64.zip"
     sha256 "{{ .Architectures.DarwinAmd64SHA }}"
   end
 
@@ -99,21 +99,21 @@ const formulaTemplate = `class {{ .Name }} < Formula
   {{- if .Architectures.LinuxAmd64 }}
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/wartner-io/{{ .Product }}/{{ .Version }}/{{ .Product }}_{{ .Version }}_linux_amd64.zip"
+    url "https://github.com/fwartner/{{ .Product }}/{{ .Version }}/{{ .Product }}_{{ .Version }}_linux_amd64.zip"
     sha256 "{{ .Architectures.LinuxAmd64SHA }}"
   end
   {{- end }}
   {{- if .Architectures.LinuxArm }}
 
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/wartner-io/{{ .Product }}/{{ .Version }}/{{ .Product }}_{{ .Version }}_linux_arm.zip"
+    url "https://github.com/fwartner/{{ .Product }}/{{ .Version }}/{{ .Product }}_{{ .Version }}_linux_arm.zip"
     sha256 "{{ .Architectures.LinuxArmSHA }}"
   end
   {{- end }}
   {{- if .Architectures.LinuxArm64 }}
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/wartner-io/{{ .Product }}/{{ .Version }}/{{ .Product }}_{{ .Version }}_linux_arm64.zip"
+    url "https://github.com/fwartner/{{ .Product }}/{{ .Version }}/{{ .Product }}_{{ .Version }}_linux_arm64.zip"
     sha256 "{{ .Architectures.LinuxArm64SHA }}"
   end
 
@@ -149,11 +149,11 @@ EOS
 end
 `
 
-const caskTemplate = `cask "wartnerio-{{ .Product }}" do
+const caskTemplate = `cask "fwartner-{{ .Product }}" do
   version "{{ .Version }}"
   sha256 "{{ .Architectures.DarwinAmd64SHA }}"
 
-  url "https://github.com/wartner-io/{{ .Product }}/#{version}/{{ .Product }}_#{version}_darwin_amd64.dmg"
+  url "https://github.com/fwartner/{{ .Product }}/#{version}/{{ .Product }}_#{version}_darwin_amd64.dmg"
   name "{{ .Name }}"
   desc "{{ .Desc }}"
   homepage "{{ .Homepage }}"
