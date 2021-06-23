@@ -1,10 +1,11 @@
 class MacCleanup < Formula
     desc "🗑️ Cleanup script for OSX"
     homepage "https://wartner.io"
-    url "https://github.com/fwartner/homebrew-mac-cleanup.git"
+    url "https://github.com/fwartner/homebrew-mac-cleanup"
     revision "6b53c3877f194f32fe1bd2ad5fbc46b6426f5a79"
     version "1.0.6"
     license "MIT"
+    head "https://github.com/fwartner/homebrew-mac-cleanup.git"
 
     def install
       bin.install "mac-cleanup"
