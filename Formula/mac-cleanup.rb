@@ -5,6 +5,7 @@ class MacCleanup < Formula
     revision "6b53c3877f194f32fe1bd2ad5fbc46b6426f5a79"
     version "1.0.6"
     license "MIT"
+    revision 2
     head "https://github.com/fwartner/homebrew-mac-cleanup.git"
 
     def install
