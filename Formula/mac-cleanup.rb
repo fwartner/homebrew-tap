@@ -6,6 +6,7 @@ class MacCleanup < Formula
     revision "c8dd7089de0798193acac6e994563bc36fa5d7a1"
     license "MIT"
     head "https://github.com/fwartner/homebrew-mac-cleanup.git"
+    sha256 "d1c6a9b4cf8be5b8df68ebb716e3d3fd36806b41af849fbb020c349edc9a15d9"
 
     def install
         bin.install "mac-cleanup"
