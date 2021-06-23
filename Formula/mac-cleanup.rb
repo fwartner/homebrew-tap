@@ -1,8 +1,9 @@
 class MacCleanup < Formula
     desc "🗑️ Cleanup script for OSX"
     homepage "https://wartner.io"
-    # revision "6b53c3877f194f32fe1bd2ad5fbc46b6426f5a79"
-    version "1.0.6"
+    version "1.0.4"
+    url "https://github.com/fwartner/mac-cleanup/archive/refs/tags/1.0.4.tar.gz"
+    revision "c8dd7089de0798193acac6e994563bc36fa5d7a1"
     license "MIT"
     head "https://github.com/fwartner/homebrew-mac-cleanup.git"
 
