@@ -2,7 +2,7 @@ class MacCleanup < Formula
   desc "🗑️ cleanup script for macos"
   homepage "https://github.com/mac-cleanup/mac-cleanup-sh"
   url "https://github.com/mac-cleanup/mac-cleanup-sh/archive/v1.1.9.tar.gz"
-  sha256 "2d00ac048f6220fe23fb508c9f3a4a1d47cc1f8067fa22127c0f2e87a5b0182a"
+  sha256 "c2734d26a91270c0ee5094090c6f13849e054b44bc62b5f4187aebf80762a564"
   license "MIT"
 
   def install
