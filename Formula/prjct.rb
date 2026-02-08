@@ -5,21 +5,21 @@
 class Prjct < Formula
   desc "Create project directory structures from YAML templates"
   homepage "https://github.com/fwartner/prjct"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fwartner/prjct/releases/download/v1.0.0/prjct_1.0.0_darwin_amd64.tar.gz"
-      sha256 "f607e56f3c0934672915f2e59b939c6a906cc8641dfd2d53d0ab6df41448ee0e"
+      url "https://github.com/fwartner/prjct/releases/download/v1.0.1/prjct_1.0.1_darwin_amd64.tar.gz"
+      sha256 "6264d6f9a970c79155a353de69e7e36096399b867e452083b4aded2ff184f5b0"
 
       def install
         bin.install "prjct"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fwartner/prjct/releases/download/v1.0.0/prjct_1.0.0_darwin_arm64.tar.gz"
-      sha256 "79a9e42436454f555bbccbdcab8de5047715566686bd957cb94f02fff0e20f01"
+      url "https://github.com/fwartner/prjct/releases/download/v1.0.1/prjct_1.0.1_darwin_arm64.tar.gz"
+      sha256 "cd9686513be689e020f48826ea07c526a7f81535f108ee212516f8b43759c6f2"
 
       def install
         bin.install "prjct"
@@ -29,15 +29,15 @@ class Prjct < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fwartner/prjct/releases/download/v1.0.0/prjct_1.0.0_linux_amd64.tar.gz"
-      sha256 "4df2baddf1b6792f0cb032a1840d990fb3879635d73e983235f6281030657726"
+      url "https://github.com/fwartner/prjct/releases/download/v1.0.1/prjct_1.0.1_linux_amd64.tar.gz"
+      sha256 "29586b2fea66c548cefe64fc509b87e2c6c4b43bcba3349a38bc8a09e3abcd4f"
       def install
         bin.install "prjct"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fwartner/prjct/releases/download/v1.0.0/prjct_1.0.0_linux_arm64.tar.gz"
-      sha256 "47f31ac7d6651149afa237260ee6f76791c2730a1381eeae42681b999d50c209"
+      url "https://github.com/fwartner/prjct/releases/download/v1.0.1/prjct_1.0.1_linux_arm64.tar.gz"
+      sha256 "ca7bb3e4b033ece3c4a16250567bc09eac1f6aa14653680a8c6f1fa8acc3de3f"
       def install
         bin.install "prjct"
       end
