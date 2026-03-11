@@ -1,12 +1,33 @@
 # Homebrew Tap
 
-A tap for all my tools that I release.
+Custom Homebrew formulae by [@fwartner](https://github.com/fwartner).
 
-## Support me
+## Installation
 
-I invest a lot of resources into creating [best in class open source packages](https://wartner.io/open-source). You can support me by [buying one of my paid products](https://wartner.io/open-source/support-me).
+```bash
+brew tap fwartner/tap
+```
 
-I highly appreciate you sending us a postcard from your hometown, mentioning which of my prpjects you are using. You'll find my address on [my contact page](https://wartner.me/contact). I publish all received postcards on [my virtual postcard wall](https://wartner.io/open-source/postcards).
+## Available Formulae
 
-### Note
-This section is inspired by my friends at [Spatie](https://github.com/spatie).
+| Formula | Description | Install |
+|---------|-------------|---------|
+| [pnp](https://github.com/fwartner/pnp) | Pixel & Process Kubernetes deployment manager | `brew install fwartner/tap/pnp` |
+| [dot](https://github.com/fwartner/dot) | Dotfiles manager | `brew install fwartner/tap/dot` |
+| [mac-cleanup](https://github.com/fwartner/mac-cleanup) | macOS cleanup utility | `brew install fwartner/tap/mac-cleanup` |
+| [prjct](https://github.com/fwartner/prjct) | Project manager | `brew install fwartner/tap/prjct` |
+
+## Usage
+
+Install any formula directly:
+
+```bash
+brew install fwartner/tap/<formula>
+```
+
+Or tap first, then install:
+
+```bash
+brew tap fwartner/tap
+brew install <formula>
+```
