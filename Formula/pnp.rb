@@ -5,20 +5,20 @@
 class Pnp < Formula
   desc "Pixel & Process Kubernetes deployment manager"
   homepage "https://github.com/fwartner/pnp"
-  version "1.2.0"
+  version "1.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fwartner/pnp/releases/download/v1.2.0/pnp_1.2.0_darwin_amd64.tar.gz"
-      sha256 "2e4109c73fe5e32bdeb29fcd196b67d310de51b6c92138aba6759b74b40c79cc"
+      url "https://github.com/fwartner/pnp/releases/download/v1.3.0/pnp_1.3.0_darwin_amd64.tar.gz"
+      sha256 "cc36eb12bb5edace2e4b0ec17e03eda8ba490c3097abb8aa9604802b0a059e11"
 
       define_method(:install) do
         bin.install "pnp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fwartner/pnp/releases/download/v1.2.0/pnp_1.2.0_darwin_arm64.tar.gz"
-      sha256 "2b09b3f50f359adb924156d922626dedea6cfc36229f5adb0b9417a8be14bc21"
+      url "https://github.com/fwartner/pnp/releases/download/v1.3.0/pnp_1.3.0_darwin_arm64.tar.gz"
+      sha256 "4d64071a750e087f8dc3b96567dd0fdc3b9ad678bc5b947745c77be11ff4901e"
 
       define_method(:install) do
         bin.install "pnp"
@@ -28,15 +28,15 @@ class Pnp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fwartner/pnp/releases/download/v1.2.0/pnp_1.2.0_linux_amd64.tar.gz"
-      sha256 "4aa089761fb0f166d5f712d698b5c2cb450f7f4821112d49d833973078b988cd"
+      url "https://github.com/fwartner/pnp/releases/download/v1.3.0/pnp_1.3.0_linux_amd64.tar.gz"
+      sha256 "1ad6e449ae4d520cd6d2678fd491e2e87a70c15510f2f8f04f36b26e1a516b89"
       define_method(:install) do
         bin.install "pnp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fwartner/pnp/releases/download/v1.2.0/pnp_1.2.0_linux_arm64.tar.gz"
-      sha256 "49581fb5c626334e23ae7ecb849471853940c3147039b7118e44a8a6e6a1d6e6"
+      url "https://github.com/fwartner/pnp/releases/download/v1.3.0/pnp_1.3.0_linux_arm64.tar.gz"
+      sha256 "4014766c7079d9fbebac351dff03379bafd9fc99fffa0dafcd891172f4da3351"
       define_method(:install) do
         bin.install "pnp"
       end
